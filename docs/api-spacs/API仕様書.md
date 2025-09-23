@@ -24,6 +24,7 @@
 ```
 
 - レスポンス：
+
 ```
 {
   "id": "abc123",
@@ -31,11 +32,12 @@
 }
 ```
 
-
 ## 支払い一覧取得（Get Payments）
+
 - URL：GET /payments
 - 認証：必須
 - レスポンス：
+
 ```
 [
   {
@@ -50,11 +52,12 @@
 ]
 ```
 
-
 ## 支払い詳細取得（Get Payment by ID）
+
 - URL：GET /payments/{id}
 - 認証：必須
 - レスポンス：
+
 ```
 {
   "id": "abc123",
@@ -66,11 +69,12 @@
 }
 ```
 
-
 ## 支払い更新（Update Payment）
+
 - URL：PUT /payments/{id}
 - 認証：必須
 - リクエストボディ：
+
 ```
 {
   "title": "電気代（修正）",
@@ -82,6 +86,7 @@
 ```
 
 - レスポンス：
+
 ```
 {
   "message": "Payment updated successfully"
@@ -90,20 +95,23 @@
 ```
 
 ## 支払い削除（Delete Payment）
+
 - URL：DELETE /payments/{id}
 - 認証：必須
 - レスポンス：
+
 ```
 {
   "message": "Payment deleted successfully"
 }
 ```
 
-
 ## Googleカレンダー連携（予定）
+
 - URL：POST /calendar/sync
 - 認証：必須（OAuth2）
 - リクエストボディ：
+
 ```
 {
   "payment_id": "abc123"
@@ -111,11 +119,9 @@
 ```
 
 - レスポンス：
+
 ```
 {
   "message": "Event added to Google Calendar"
 }
 ```
-
-
-

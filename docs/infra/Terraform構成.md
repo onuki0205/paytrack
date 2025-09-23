@@ -16,3 +16,4 @@ graph TD
   A --> J[s3.tf<br>Vueアプリホスティング用S3バケット]
   A --> K[cloudfront.tf<br>CDN構成（S3と連携）]
   A --> L[calendar.tf<br>Google API連携用の設定（任意）]
+```

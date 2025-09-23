@@ -19,3 +19,4 @@ erDiagram
     datetime created_at "登録日時"
     datetime updated_at "更新日時"
   }
+```
